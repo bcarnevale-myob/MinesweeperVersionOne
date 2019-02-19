@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class Main {
         };
 
         for (String[] i: board) {
-            System.out.println(i);
+            System.out.println(Arrays.deepToString(i));
         }
 
     }
