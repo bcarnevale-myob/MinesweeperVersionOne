@@ -6,5 +6,16 @@ public class Main {
 
         // output the board
 
+        String[][] board = {
+                {".", ".", ".", "."},
+                {".", "*", ".", "."},
+                {".", ".", ".", "*"},
+                {".", ".", "*", "."}
+        };
+
+        for (String[] i: board) {
+            System.out.println(i);
+        }
+
     }
 }
