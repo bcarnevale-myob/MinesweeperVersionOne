@@ -16,7 +16,10 @@ public class Main {
         };
 
         for (String[] i: board) {
-            System.out.println(Arrays.deepToString(i));
+            for (String data: i){
+                System.out.println(data);
+            }
+//            System.out.println(Arrays.deepToString(i));
         }
 
     }
