@@ -2,28 +2,21 @@ package com.company;
 
 public class BoardFixed {
 
-    // create a board with fixed positions
+    private final String[][] board;
 
-    String[][] board = {
-            {".", ".", ".", "."},
-            {".", "*", ".", "."},
-            {".", ".", ".", "*"},
-            {".", ".", "*", "."}
-    };
-
-    public BoardFixed() {
-        System.out.print(board);
+    private String[][] createBoard(String[][] board) {
+        for (int r=0; r<board.length; r++) {
+            for (int c=0; c<board[r].length; c++) {
+                board[1][1] = "*";
+                board[2][3] = "*";
+                board[r][c] = ".";
+            }
+        }
+        return board;
     }
 
-
-//    String[][] board = new String[4][4];
-//
-//    int i = 0;
-//    for(i=0, i<=4, i++){
-//        if(i==1 || i==3){
-//            board[i] = "*";
-//        }
-//        board[i] = ".";
-//    }
+    public BoardFixed(String[][] board) {
+        this.board = createBoard(board);
+    }
 
 }
