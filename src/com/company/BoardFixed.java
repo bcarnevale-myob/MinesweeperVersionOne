@@ -7,18 +7,23 @@ public class BoardFixed {
     private String[][] createBoard(String[][] board) {
         for (int r=0; r<board.length; r++) {
             for (int c=0; c<board[r].length; c++) {
-                board[1][1] = "*";
-                board[2][3] = "*";
-                board[r][c] = ".";
+                if ((c == 2 && r == 1) || (c == 3 && r == 2)) {
+                    board[r][c] = "*";
+                } else {
+                    board[r][c] = ".";
+                }
             }
         }
         return board;
     }
-
-    // QUESTION: why doesnt board[3][3] = "*" work??
 
     public BoardFixed(String[][] board) {
         this.board = createBoard(board);
     }
 
 }
+
+// change board to field
+// array of squares rather than string
+
+

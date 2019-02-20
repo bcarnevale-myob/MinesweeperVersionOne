@@ -4,9 +4,19 @@ import java.util.Arrays;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         // output BoardFixed class
+
+        Square mySquare = new Square(".");
+        Square myOtherSquare = new Square(".");
+        if (myOtherSquare.equals(mySquare)) {
+            System.out.println("Equal");
+        } else {
+            System.out.println("Not equal");
+        };
+
+//        Square[][] field =
 
         String[][] boardFixed = new String[4][4];
 
@@ -34,33 +44,16 @@ public class Main {
 
         // method to print current board - QUESTION: why does this method not work?
 
-        /*public String printCurrentBoard(){
-            for (int r=0; r<boardFixed.length; r++) {
-                for (int c=0; c<boardFixed[r].length; c++){
-                    System.out.print(boardFixed[r][c]);
+        /*public String[][] printCurrentBoard(String[][] board){
+            for (int r=0; r<board.length; r++) {
+                for (int c=0; c<board[r].length; c++){
+                    System.out.print(board[r][c]);
                 }
                 System.out.println();
             }
         }
 
-        printCurrentBoard();*/
-
-        // print fixed board to screen
-
-//        boardFixed[0][0] = "1";
-//        boardFixed[0][1] = "1";
-//        boardFixed[0][2] = "1";
-//        boardFixed[0][3] = "0";
-//        boardFixed[1][0] = "1";
-//        boardFixed[1][2] = "2";
-//        boardFixed[1][3] = "1";
-//        boardFixed[2][0] = "1";
-//        boardFixed[2][1] = "1";
-//        boardFixed[2][2] = "2";
-//        boardFixed[3][0] = "0";
-//        boardFixed[3][1] = "0";
-//        boardFixed[3][2] = "1";
-//        boardFixed[3][3] = "1";
+        printCurrentBoard(board1);*/
 
         // input and print board with fixed hints
 
