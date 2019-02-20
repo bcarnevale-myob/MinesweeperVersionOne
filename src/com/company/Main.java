@@ -12,24 +12,25 @@ public class Main {
 
         BoardFixed board1 = new BoardFixed(boardFixed);
 
-        // input * into fixed board
+        // QUESTION: I feel as though line 11 and 13, something is not necessary there?
 
-//        for (int r=0; r<boardFixed.length; r++) {
-//            for (int c=0; c<boardFixed[r].length; c++) {
-//                boardFixed[1][1] = "*";
-//                boardFixed[2][3] = "*";
-//                boardFixed[r][c] = ".";
-//            }
-//        }
+        for (int r=0; r<boardFixed.length; r++) {
+            for (int c=0; c<boardFixed[r].length; c++){
+                System.out.print(boardFixed[r][c]);
+            }
+            System.out.println();
+        }
 
-        // QUESTION: why doesnt board[3][3] = "*" work??
+        BoardFixedHints board2 = new BoardFixedHints(boardFixed);
 
-//        for (int r=0; r<boardFixed.length; r++) {
-//            for (int c=0; c<boardFixed[r].length; c++){
-//                System.out.print(boardFixed[r][c]);
-//            }
-//            System.out.println();
-//        }
+        // QUESTION: I tried to change the below to loop through board2 and the method length stopped working
+
+        for (int r=0; r<boardFixed.length; r++) {
+            for (int c=0; c<boardFixed[r].length; c++){
+                System.out.print(boardFixed[r][c]);
+            }
+            System.out.println();
+        }
 
         // method to print current board - QUESTION: why does this method not work?
 
@@ -60,13 +61,6 @@ public class Main {
 //        boardFixed[3][1] = "0";
 //        boardFixed[3][2] = "1";
 //        boardFixed[3][3] = "1";
-
-        for (int r=0; r<boardFixed.length; r++) {
-            for (int c=0; c<boardFixed[r].length; c++){
-                System.out.print(boardFixed[r][c]);
-            }
-            System.out.println();
-        }
 
         // input and print board with fixed hints
 

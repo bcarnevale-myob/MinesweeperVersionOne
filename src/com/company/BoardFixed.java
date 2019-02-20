@@ -15,6 +15,8 @@ public class BoardFixed {
         return board;
     }
 
+    // QUESTION: why doesnt board[3][3] = "*" work??
+
     public BoardFixed(String[][] board) {
         this.board = createBoard(board);
     }
