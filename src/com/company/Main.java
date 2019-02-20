@@ -32,10 +32,11 @@ public class Main {
             }
         }
 
-        for (String[] i: board) {
-            for (String data: i){
-                System.out.println(data);
+        for (int r=0; r<board.length; r++) {
+            for (int c=0; c<board[r].length; c++){
+                System.out.print(board[r][c]);
             }
+            System.out.println();
         }
 
     }
