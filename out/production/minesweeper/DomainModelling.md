@@ -2,7 +2,7 @@
 - mines
 - field
 - square
-- hint numbers
+- hint numbers - related adjacent
 - safe square
 - mine square
 - adjacent
