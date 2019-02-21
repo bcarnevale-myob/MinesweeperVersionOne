@@ -19,8 +19,8 @@ public class Field {
         return field;
     }
 
-    public Field(Square[][] field) {
-        this.field = field;
+    public Field(Square[][] field) throws Exception {
+        this.field = createField(field);
     }
 
 }
