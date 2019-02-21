@@ -4,7 +4,7 @@ public class Field {
     
     private final Square[][] field;
 
-    private Square[][] createField(Square[][] field) throws Exception {
+    public Square[][] createField(Square[][] field) throws Exception {
         Square safeSquare = new Square(".");
         Square mineSquare = new Square("*");
         for (int r=0; r<field.length; r++) {

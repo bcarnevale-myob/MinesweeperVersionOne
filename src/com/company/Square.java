@@ -2,7 +2,7 @@ package com.company;
 
 public class Square {
 
-    private final SquareType squareType;
+    public final SquareType squareType;
 
     public Square(SquareType squareType) {
         this.squareType = squareType;

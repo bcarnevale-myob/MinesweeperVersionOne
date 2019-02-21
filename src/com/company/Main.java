@@ -16,7 +16,7 @@ public class Main {
 
         for (int r=0; r<newField.length; r++) {
             for (int c=0; c<newField[r].length; c++){
-                System.out.print(newField[r][c]);
+                System.out.print(newField[r][c].squareType);
             }
             System.out.println();
         }
