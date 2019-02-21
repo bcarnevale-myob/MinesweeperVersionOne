@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40e3d0a5-09e7-4306-b8dd-09f9ce6f5f96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/BoardFixed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/BoardFixedHints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/FieldWithHints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/com/company/FieldWithHints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/com/company/Square.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/BoardFixed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/BoardFixedHints.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/FieldWithHints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FieldWithHints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SquareType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SquareType.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,20 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="462">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/FieldWithHints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="375">
+              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -166,7 +153,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550791475839" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550793115588" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -212,12 +199,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550616616359</updated>
-      <workItem from="1550616619134" duration="41213000" />
+      <workItem from="1550616619134" duration="42191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41213000" />
+    <option name="totallyTimeSpent" value="42191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="805" extended-state="6" />
@@ -377,6 +364,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Square.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -394,15 +388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/FieldWithHints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="375">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
