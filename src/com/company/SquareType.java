@@ -1,5 +1,16 @@
 package com.company;
 
 public enum SquareType {
-    SAFE, MINE
+    SAFE {
+        public String toString() {
+           return ".";
+        }
+    },
+    MINE {
+        public String toString() {
+            return "*";
+        }
+    }
 }
+
+// string to squaretype method
