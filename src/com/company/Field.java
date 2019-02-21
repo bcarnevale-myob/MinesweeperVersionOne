@@ -9,7 +9,7 @@ public class Field {
         Square mineSquare = new Square("*");
         for (int r=0; r<field.length; r++) {
             for (int c=0; c<field[r].length; c++) {
-                if ((c == 2 && r == 1) || (c == 3 && r == 2)) {
+                if ((c == 2 && r == 1) || (c == 2 && r == 2)) {
                     field[r][c] = mineSquare;
                 } else {
                     field[r][c] = safeSquare;
