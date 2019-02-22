@@ -27,10 +27,10 @@ public class FieldWithHints {
         return hintField;
     }
 
-    // NEED TO DO
-    // get the current square
-    // go around all 8 adjacent squares and check if they are in range
-    // if an adjacent square is a MINE, +1 to the value of the current square
+//    public boolean inRange(int row, int column) {
+//        // needs to check in all directions
+//        return (0 <= row && row < fieldWithHints.length) && (0 <= column && column < fieldWithHints.length);
+//    }
 
     // all adjacent squares index values, currentSquare [r][c]
     // rightBottom: [r+1][c+1]
@@ -42,8 +42,11 @@ public class FieldWithHints {
     // leftBottom: [r-1][c+1]
     // below: [r][c+1]
 
-    // method to add 1 to a square if a mine is adjacent
-    // if adjacent to a MINE, +1 to the value of the square, cant go above 8
+    // NEED TO DO
+    // get the current square
+    // go around all 8 adjacent squares and check if they are in range
+    // if an adjacent square is a MINE, +1 to the value of the current square
+    // make sure square int does not go above 8
 
     private int[][] getFieldWithHints(Square[][] field) throws Exception {
         int[][] hintField = convertToFieldOfInts(field);
@@ -51,17 +54,16 @@ public class FieldWithHints {
             for (int c = 0; c < hintField[r].length; c++) {
                 if (!(hintField[r][c] == -1)) {
                     // now we have a safe square, check all adjacent squares, +1 if adjacent square is a mine
-                    
+                    // QUESTION: why does .equals method not work below??
+                    if ((hintField[r+1][c+1] == -1) || (hintField[r+1][c] == -1) || (hintField[r+1][c-1] == -1) || (hintField[r][c-1] == -1) || (hintField[r-1][c-1] == -1) || (hintField[r-1][c] == -1) || (hintField[r-1][c+1] == -1) || (hintField[r][c+1] == -1)) {
+                        hintField[r][c] = hintField[r][c] + 1;
+                    }
                 }
             }
         }
         return hintField;
     }
 
-    public boolean inRange(int row, int column) {
-        // needs to check in all directions
-        return (0 <= row && row < fieldWithHints.length) && (0 <= column && column < fieldWithHints.length);
-    }
 
         // if adjacent to a MINE, +1 to the value of the square, cant go above 8
 
