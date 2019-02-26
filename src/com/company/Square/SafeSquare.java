@@ -1,7 +1,8 @@
-package com.company;
+package com.company.Square;
 
 public class SafeSquare extends Square {
-    SafeSquare() {
+
+    public SafeSquare() {
         squareIcon = ".";
     }
 
@@ -9,4 +10,13 @@ public class SafeSquare extends Square {
     public Boolean isSafe() {
         return true;
     }
+
+    @Override
+    public String toString() {
+        return super.GetHint().toString();
+    }
+
 }
+
+// return dots and star
+// return hints

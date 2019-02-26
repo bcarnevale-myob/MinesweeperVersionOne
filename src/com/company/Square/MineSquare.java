@@ -1,6 +1,7 @@
 package com.company.Square;
 
 public class MineSquare extends Square {
+
     public MineSquare() {
         this.squareIcon = "*";
         this.isSafe = false;

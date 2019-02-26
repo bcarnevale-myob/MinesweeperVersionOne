@@ -1,18 +1,18 @@
-package com.company;
+package com.company.Square;
 
+@SuppressWarnings("WeakerAccess")
 public abstract class Square {
 
-    String squareIcon;
+    protected String squareIcon;
     protected Boolean isSafe = true;
 
     private int hint = 0;
-
 
     public void IncreaseHint() {
         hint++;
     }
 
-    public int GetHint() {
+    public Integer GetHint() {
         return hint;
     }
 

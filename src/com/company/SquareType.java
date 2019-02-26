@@ -13,4 +13,3 @@ public enum SquareType {
     }
 }
 
-// string to squaretype method

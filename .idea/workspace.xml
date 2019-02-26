@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40e3d0a5-09e7-4306-b8dd-09f9ce6f5f96" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/com/company/Field.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/FieldWithHints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/com/company/FieldWithHints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/com/company/Square.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/FieldWithHints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FieldWithHints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Square/MineSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Square/MineSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Square/SafeSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Square/SafeSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Square/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Square/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/SquareType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SquareType.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,57 +28,94 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Field.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="165">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/FieldWithHints.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Square.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="201">
+              <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
               <folding>
-                <element signature="e#107#108#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#1270#1271#0" expanded="true" />
+                <element signature="e#1312#1313#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/SquareType.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Position.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/FieldWithHints.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Square/Square.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#29#62#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Square/MineSquare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Square/SafeSquare.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
-                <element signature="e#91#92#0" expanded="true" />
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#99#100#0" expanded="true" />
+                <element signature="e#131#132#0" expanded="true" />
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#245#246#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,6 +139,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -106,10 +156,17 @@
         <option value="$PROJECT_DIR$/src/com/company/SquareWithHints.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/company/SquareType.java" />
+        <option value="$PROJECT_DIR$/src/com/company/SafeSquare.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DayOfWeek.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MineSquare.java" />
         <option value="$PROJECT_DIR$/src/com/company/Square.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Field.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Position.java" />
         <option value="$PROJECT_DIR$/src/com/company/FieldWithHints.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Square/MineSquare.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Square/SafeSquare.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Square/Square.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Field.java" />
       </list>
     </option>
   </component>
@@ -144,6 +201,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="minesweeper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="minesweeper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="Square" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -153,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550795574407" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551156943397" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -199,15 +263,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550616616359</updated>
-      <workItem from="1550616619134" duration="45186000" />
+      <workItem from="1550616619134" duration="51900000" />
+      <workItem from="1551046343018" duration="6699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45186000" />
+    <option name="totallyTimeSpent" value="58599000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="805" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -215,19 +280,19 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14663805" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14878398" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32959327" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32959327" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.16269284" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3282123" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.37988827" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32959327" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3282123" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="right" id="Theme Preview" order="0" />
@@ -237,12 +302,28 @@
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Field.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java">
@@ -267,38 +348,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/BoardFixedHints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding>
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DomainModelling.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Field.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/BoardFixedHints.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -306,13 +357,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/BoardFixed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BoardFixed.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -331,65 +376,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/SquareWithHints.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/DayOfWeek.java" />
+    <entry file="file://$PROJECT_DIR$/src/DomainModelling.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/SquareType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
           <folding>
             <element signature="e#91#92#0" expanded="true" />
             <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/SquareWithHints.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Square/MineSquare.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Square/SafeSquare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#99#100#0" expanded="true" />
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Square.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/FieldWithHints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="145">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Square/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#107#108#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#29#62#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/FieldWithHints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="201">
+          <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1312#1313#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
