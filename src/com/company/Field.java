@@ -21,16 +21,9 @@ public class Field {
     }
 
     private int findRandomPosition() {
-        int randomNumber = (int) Math.floor(Math.random()*4 + 1);
-        if (randomNumber >= 0 && randomNumber < 4 ) {
-            return randomNumber;
-        } else {
-            return 1;
-        }
+        return (int) Math.floor(Math.random() * 4);
     }
 
-    // QUESTION: I can't put a mine on column 3?? I remember we went over this but I forgot how to fix it
-    // ERRORS: Only works sometimes :( NullPointerException, ArrayIndexOutOfBoundsException
     private Square[][] createField() {
         Square[][] field = new Square[4][4];
         int mineRow1 = findRandomPosition();
@@ -71,8 +64,8 @@ public class Field {
         for (int r = 0; r < field.length; r++) {
             for (int c = 0; c < field[0].length; c++) {
                 for (Position pos : Position.values()) {
-                    if (!field[r][c].isSafe()) {
-                        Square s = getSquare(pos, r, c);
+                    Square s = getSquare(pos, r, c);
+                    if (s != null && !field[r][c].isSafe()) {
                         s.IncreaseHint();
                     }
                 }
@@ -84,11 +77,10 @@ public class Field {
     private Boolean isOutOfBounds(int row, int column) {
         return row < 0 ||
                 column < 0 ||
-                (row > field.length) ||
-                (column > field[0].length);
+                (row >= field.length) ||
+                (column >= field[0].length);
     }
 
-    //
     private Square getSquare(Position pos, int row, int col) {
 
         switch (pos) {
