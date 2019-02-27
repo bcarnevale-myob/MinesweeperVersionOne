@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Field field1 = new Field(5, 5, 3);
+        Field field1 = new Field(6, 8, 7);
 
         field1.makeHints();
 

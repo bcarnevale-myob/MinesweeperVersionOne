@@ -34,16 +34,8 @@ public class Field {
     private Square[][] createField(int fieldWidth, int fieldHeight, int numberOfMines) {
         Square[][] field = new Square[fieldWidth][fieldHeight];
 
-        // create numberOfMines amount of mineRows and mineColumns
         int[] mineRows = createMinePositions(numberOfMines, fieldWidth);
         int[] mineColumns = createMinePositions(numberOfMines, fieldHeight);
-
-//        int mineRow1 = randomNumberGenerator.nextInt(fieldWidth);
-//        int mineColumn1 = randomNumberGenerator.nextInt(fieldHeight);
-//        int mineRow2 = randomNumberGenerator.nextInt(fieldWidth);
-//        int mineColumn2 = randomNumberGenerator.nextInt(fieldHeight);
-
-
 
         for (int r = 0; r < field.length; r++) {
             for (int c = 0; c < field[r].length; c++) {
@@ -52,11 +44,11 @@ public class Field {
                     if (r == mineRows[i] && c == mineColumns[i]) {
                         isSquareAMine = true;
                     }
-                    if (isSquareAMine) {
-                        field[r][c] = new MineSquare();
-                    } else {
-                        field[r][c] = new SafeSquare();
-                    }
+                }
+                if (isSquareAMine) {
+                    field[r][c] = new MineSquare();
+                } else {
+                    field[r][c] = new SafeSquare();
                 }
             }
         }
@@ -64,7 +56,8 @@ public class Field {
         return field;
     }
 
-    // TO DO: get it to put in all the number of mines, get it to make sure all random numbers are different
+    // TO DO: get it to make sure all random numbers are different
+    // TO DO: get it to randomise the number of mines
 
     public Field(int fieldWidth, int fieldHeight, int numberOfMines) {
         this.randomNumberGenerator = new Random();
