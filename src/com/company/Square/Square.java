@@ -12,10 +12,12 @@ public abstract class Square {
         hint++;
     }
 
+    // QUESTION: Why did this have to be integer instead of just int?
     public Integer GetHint() {
         return hint;
     }
 
+    // QUESTION: Why the capital Boolean instad of lowercase?
     public Boolean isSafe() {
         return isSafe;
     }

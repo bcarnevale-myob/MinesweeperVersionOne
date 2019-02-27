@@ -10,16 +10,7 @@ public class Field {
 
     public Square getSquareAt(int row, int column) {
         return field[row][column];
-        // throw exception for square outside of field
     }
-
-    // QUESTION: I know String is probably not the best return. I originally had it returning an int, but how do you return two separate ints??
-    // split in two
-//    public String getFieldSize(Square[][] field) {
-//        int rows = field.length;
-//        int columns = field[0].length;
-//        return "(" + rows + ", " + columns + ")";
-//    }
 
     public int getHeight() {
         return field[0].length;
@@ -29,11 +20,26 @@ public class Field {
         return field.length;
     }
 
+    private int findRandomPosition() {
+        int randomNumber = (int) Math.floor(Math.random()*4 + 1);
+        if (randomNumber >= 0 && randomNumber < 4 ) {
+            return randomNumber;
+        } else {
+            return 1;
+        }
+    }
+
+    // QUESTION: I can't put a mine on column 3?? I remember we went over this but I forgot how to fix it
+    // ERRORS: Only works sometimes :( NullPointerException, ArrayIndexOutOfBoundsException
     private Square[][] createField() {
         Square[][] field = new Square[4][4];
+        int mineRow1 = findRandomPosition();
+        int mineColumn1 = findRandomPosition();
+        int mineRow2 = findRandomPosition();
+        int mineColumn2 = findRandomPosition();
         for (int r = 0; r < field.length; r++) {
             for (int c = 0; c < field[r].length; c++) {
-                if ((c == 2 && r == 1) || (c == 2 && r == 2)) {
+                if ((r == mineRow1 && c == mineColumn1) || (r == mineRow2 && c == mineColumn2)) {
                     field[r][c] = new MineSquare();
                 } else {
                     field[r][c] = new SafeSquare();
