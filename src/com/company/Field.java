@@ -20,16 +20,16 @@ public class Field {
         return field.length;
     }
 
-    private int findRandomPosition() {
-        return (int) Math.floor(Math.random() * 4);
+    private int findRandomPosition(int fieldSize) {
+        return (int) Math.floor(Math.random() * fieldSize);
     }
 
-    private Square[][] createField() {
-        Square[][] field = new Square[4][4];
-        int mineRow1 = findRandomPosition();
-        int mineColumn1 = findRandomPosition();
-        int mineRow2 = findRandomPosition();
-        int mineColumn2 = findRandomPosition();
+    private Square[][] createField(int fieldSize) {
+        Square[][] field = new Square[fieldSize][fieldSize];
+        int mineRow1 = findRandomPosition(fieldSize);
+        int mineColumn1 = findRandomPosition(fieldSize);
+        int mineRow2 = findRandomPosition(fieldSize);
+        int mineColumn2 = findRandomPosition(fieldSize);
         for (int r = 0; r < field.length; r++) {
             for (int c = 0; c < field[r].length; c++) {
                 if ((r == mineRow1 && c == mineColumn1) || (r == mineRow2 && c == mineColumn2)) {
@@ -42,8 +42,8 @@ public class Field {
         return field;
     }
 
-    public Field() {
-        this.field = createField();
+    public Field(int fieldSize) {
+        this.field = createField(fieldSize);
     }
 
     public String toString() {
