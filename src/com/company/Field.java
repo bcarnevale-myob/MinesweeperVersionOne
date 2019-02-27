@@ -4,9 +4,12 @@ import com.company.Square.MineSquare;
 import com.company.Square.SafeSquare;
 import com.company.Square.Square;
 
+import java.util.Random;
+
 public class Field {
 
     private final Square[][] field;
+    private final Random randomNumberGenerator;
 
     public Square getSquareAt(int row, int column) {
         return field[row][column];
@@ -20,30 +23,52 @@ public class Field {
         return field.length;
     }
 
-    private int findRandomPosition(int fieldSize) {
-        return (int) Math.floor(Math.random() * fieldSize);
+    private int[] createMinePositions(int numberOfMines, int fieldDimension) {
+        int[] minePositions = new int[numberOfMines];
+        for(int i = 0; i < minePositions.length; i++) {
+            minePositions[i] = randomNumberGenerator.nextInt(fieldDimension);
+        }
+        return minePositions;
     }
 
-    private Square[][] createField(int fieldSize) {
-        Square[][] field = new Square[fieldSize][fieldSize];
-        int mineRow1 = findRandomPosition(fieldSize);
-        int mineColumn1 = findRandomPosition(fieldSize);
-        int mineRow2 = findRandomPosition(fieldSize);
-        int mineColumn2 = findRandomPosition(fieldSize);
+    private Square[][] createField(int fieldWidth, int fieldHeight, int numberOfMines) {
+        Square[][] field = new Square[fieldWidth][fieldHeight];
+
+        // create numberOfMines amount of mineRows and mineColumns
+        int[] mineRows = createMinePositions(numberOfMines, fieldWidth);
+        int[] mineColumns = createMinePositions(numberOfMines, fieldHeight);
+
+//        int mineRow1 = randomNumberGenerator.nextInt(fieldWidth);
+//        int mineColumn1 = randomNumberGenerator.nextInt(fieldHeight);
+//        int mineRow2 = randomNumberGenerator.nextInt(fieldWidth);
+//        int mineColumn2 = randomNumberGenerator.nextInt(fieldHeight);
+
+
+
         for (int r = 0; r < field.length; r++) {
             for (int c = 0; c < field[r].length; c++) {
-                if ((r == mineRow1 && c == mineColumn1) || (r == mineRow2 && c == mineColumn2)) {
-                    field[r][c] = new MineSquare();
-                } else {
-                    field[r][c] = new SafeSquare();
+                boolean isSquareAMine = false;
+                for (int i = 0; i < mineRows.length; i++) {
+                    if (r == mineRows[i] && c == mineColumns[i]) {
+                        isSquareAMine = true;
+                    }
+                    if (isSquareAMine) {
+                        field[r][c] = new MineSquare();
+                    } else {
+                        field[r][c] = new SafeSquare();
+                    }
                 }
             }
         }
+
         return field;
     }
 
-    public Field(int fieldSize) {
-        this.field = createField(fieldSize);
+    // TO DO: get it to put in all the number of mines, get it to make sure all random numbers are different
+
+    public Field(int fieldWidth, int fieldHeight, int numberOfMines) {
+        this.randomNumberGenerator = new Random();
+        this.field = createField(fieldWidth, fieldHeight, numberOfMines);
     }
 
     public String toString() {
