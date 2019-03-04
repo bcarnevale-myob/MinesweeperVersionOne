@@ -17,7 +17,7 @@ public abstract class Square {
         return hint;
     }
 
-    // QUESTION: Why the capital Boolean instad of lowercase?
+    // QUESTION: Why the capital Boolean instead of lowercase?
     public Boolean isSafe() {
         return isSafe;
     }
