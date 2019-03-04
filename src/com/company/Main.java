@@ -19,9 +19,14 @@ public class Main {
         int numberOfRows = dimensionsAsInt[0];
         int numberOfCols = dimensionsAsInt[1];
 
-        System.out.println("Please enter your game field with mines, splitting rows with a ',': ");
+        System.out.println("Please enter your game field with mines: ");
 
-        String fieldInput = readInput.nextLine();
+        int i = 0;
+        String fieldInput = "";
+        while (i < numberOfRows) {
+            fieldInput += readInput.nextLine() + ",";
+            i++;
+        }
 
         String[][] userField = convertFieldInput(numberOfRows, numberOfCols, fieldInput);
 

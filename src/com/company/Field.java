@@ -65,24 +65,23 @@ public class Field {
     // TO DO: get it to make sure all random numbers are different
     // TO DO: get it to randomise the number of mines
 
-    private Square[][] createFieldFromUser(int fieldWidth, int fieldHeight, String[][] fieldInput) {
+    private Square[][] createFieldFromUser(int fieldWidth, int fieldHeight, String[][] userField) {
         Square[][] field = new Square[fieldWidth][fieldHeight];
 
-        for(int r = 0; r < fieldInput.length; r++) {
-            for(int c = 0; c < fieldInput.length; c++) {
-                if (fieldInput[r][c].equals("*")) {
+        for(int r = 0; r < userField.length; r++) {
+            for(int c = 0; c < userField[r].length; c++) {
+                if (userField[r][c].equals("*")) {
                     field[r][c] = new MineSquare();
                 } else {
                     field[r][c] = new SafeSquare();
                 }
             }
         }
-
         return field;
     }
 
-    public Field(int fieldWidth, int fieldHeight, String[][] fieldInput) {
-        this.field = createFieldFromUser(fieldWidth, fieldHeight, fieldInput);
+    public Field(int fieldWidth, int fieldHeight, String[][] userField) {
+        this.field = createFieldFromUser(fieldWidth, fieldHeight, userField);
     }
 
     public String toString() {
