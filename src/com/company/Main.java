@@ -11,20 +11,30 @@ public class Main {
         Scanner readInput = new Scanner(input);
 
         System.out.println("Welcome to Minesweeper!");
-        System.out.println("Please enter the field dimensions: ");
+        System.out.println("Please enter your game field dimensions: ");
 
         String dimensions = readInput.nextLine();
 
         int[] dimensionsAsInt = convertDimensionsInput(dimensions);
+        int numberOfRows = dimensionsAsInt[0];
+        int numberOfCols = dimensionsAsInt[1];
 
-        Field field1 = new Field(dimensionsAsInt[0], dimensionsAsInt[1], 5);
+        System.out.println("Please enter your game field with mines, splitting rows with a ',': ");
 
-        field1.makeHints();
+        String fieldInput = readInput.nextLine();
 
-        System.out.print(field1);
+        String[][] userField = convertFieldInput(numberOfRows, numberOfCols, fieldInput);
+
+        Field newField = new Field(numberOfRows, numberOfCols, userField);
+
+        newField.makeHints();
+
+        System.out.println("Field #1:");
+        System.out.print(newField);
 
     }
 
+    // QUESTION: Tried to add .trim but it did not work??
     public static int[] convertDimensionsInput(String dimensions) {
         String[] dimensionsInput = dimensions.split("");
         int[] dimensionsAsInt = new int[dimensionsInput.length];
@@ -32,6 +42,15 @@ public class Main {
             dimensionsAsInt[i] = Integer.parseInt(dimensionsInput[i]);
         }
         return dimensionsAsInt;
+    }
+
+    private static String[][] convertFieldInput(int numberOfRows, int numberOfCol, String fieldInput) {
+        String[] createFieldRows = fieldInput.split(",");
+        String[][] createField = new String[numberOfRows][numberOfCol];
+        for(int i = 0; i < createFieldRows.length; i++) {
+            createField[i] = createFieldRows[i].split("");
+        }
+        return createField;
     }
 
 }

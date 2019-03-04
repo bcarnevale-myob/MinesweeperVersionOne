@@ -9,7 +9,7 @@ import java.util.Random;
 public class Field {
 
     private final Square[][] field;
-    private final Random randomNumberGenerator;
+    private Random randomNumberGenerator;
 
     public Square getSquareAt(int row, int column) {
         return field[row][column];
@@ -31,7 +31,7 @@ public class Field {
         return minePositions;
     }
 
-    private Square[][] createField(int fieldWidth, int fieldHeight, int numberOfMines) {
+    private Square[][] createRandomField(int fieldWidth, int fieldHeight, int numberOfMines) {
         Square[][] field = new Square[fieldWidth][fieldHeight];
 
         int[] mineRows = createMinePositions(numberOfMines, fieldWidth);
@@ -56,12 +56,33 @@ public class Field {
         return field;
     }
 
+    public Field(int fieldWidth, int fieldHeight, int numberOfMines) {
+        this.randomNumberGenerator = new Random();
+        this.field = createRandomField(fieldWidth, fieldHeight, numberOfMines);
+    }
+
+
     // TO DO: get it to make sure all random numbers are different
     // TO DO: get it to randomise the number of mines
 
-    public Field(int fieldWidth, int fieldHeight, int numberOfMines) {
-        this.randomNumberGenerator = new Random();
-        this.field = createField(fieldWidth, fieldHeight, numberOfMines);
+    private Square[][] createFieldFromUser(int fieldWidth, int fieldHeight, String[][] fieldInput) {
+        Square[][] field = new Square[fieldWidth][fieldHeight];
+
+        for(int r = 0; r < fieldInput.length; r++) {
+            for(int c = 0; c < fieldInput.length; c++) {
+                if (fieldInput[r][c].equals("*")) {
+                    field[r][c] = new MineSquare();
+                } else {
+                    field[r][c] = new SafeSquare();
+                }
+            }
+        }
+
+        return field;
+    }
+
+    public Field(int fieldWidth, int fieldHeight, String[][] fieldInput) {
+        this.field = createFieldFromUser(fieldWidth, fieldHeight, fieldInput);
     }
 
     public String toString() {
