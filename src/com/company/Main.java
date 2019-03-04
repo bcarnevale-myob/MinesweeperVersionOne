@@ -19,23 +19,45 @@ public class Main {
         int numberOfRows = dimensionsAsInt[0];
         int numberOfCols = dimensionsAsInt[1];
 
-        System.out.println("Please enter your game field with mines: ");
+        System.out.println("Would you like to select(S) or randomise(R) mine locations? ");
 
-        int i = 0;
-        String fieldInput = "";
-        while (i < numberOfRows) {
-            fieldInput += readInput.nextLine() + ",";
-            i++;
+        String userChoice = readInput.nextLine();
+
+        if(userChoice.equals("S")) {
+
+            System.out.println("Please enter your game field with mines: ");
+
+            int i = 0;
+            String fieldInput = "";
+            while (i < numberOfRows) {
+                fieldInput += readInput.nextLine() + ",";
+                i++;
+            }
+
+            String[][] userField = convertFieldInput(numberOfRows, numberOfCols, fieldInput);
+
+            Field newField = new Field(numberOfRows, numberOfCols, userField);
+
+            newField.makeHints();
+
+            System.out.println("Field:");
+            System.out.print(newField);
+
+        } else if(userChoice.equals("R")) {
+
+            Field newField = new Field(numberOfRows, numberOfCols, 4);
+
+            newField.makeHints();
+
+            System.out.println("Field:");
+            System.out.print(newField);
+
+        } else {
+
+            System.out.println("Invalid response, received: " + userChoice);
+
         }
 
-        String[][] userField = convertFieldInput(numberOfRows, numberOfCols, fieldInput);
-
-        Field newField = new Field(numberOfRows, numberOfCols, userField);
-
-        newField.makeHints();
-
-        System.out.println("Field #1:");
-        System.out.print(newField);
 
     }
 
